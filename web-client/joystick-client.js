@@ -4,6 +4,7 @@ var haveEvents = 'GamepadEvent' in window;
 var haveWebkitEvents = 'WebKitGamepadEvent' in window;
 var controllers = {};
 
+// normally this work at 60 fps
 var rAF = window.mozRequestAnimationFrame ||
     window.webkitRequestAnimationFrame ||
     window.requestAnimationFrame;
