@@ -7,8 +7,6 @@ use MyApp\Socket;
 
 require dirname( __FILE__ ) . '/vendor/autoload.php';
 
-require_once('app/socket.php');
-
 $server = IoServer::factory(
     new HttpServer(
         new WsServer(
