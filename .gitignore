@@ -1,0 +1,5 @@
+composer-stable.phar
+vendor
+vendor/*
+*/vendor
+*/vendor/*
