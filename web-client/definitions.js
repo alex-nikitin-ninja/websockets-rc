@@ -3,11 +3,11 @@ console.log('definitions connected');
 var joystickState = {};
 
 let joystickStateValues = document.getElementById('joystickState-values');
-function updateJState(){
+function updateJStateOnScreen(){
     joystickStateValues.innerHTML = JSON.stringify(joystickState);
     setTimeout(function(){
-        updateJState()
+        updateJStateOnScreen()
     }, 50);
 };
-updateJState();
+updateJStateOnScreen();
 
