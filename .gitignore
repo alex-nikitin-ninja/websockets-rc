@@ -1,5 +1,3 @@
-composer-stable.phar
-vendor
-vendor/*
-*/vendor
-*/vendor/*
+ws-server/composer-stable.phar
+ws-server/vendor/
+ws-server/vendor/*
