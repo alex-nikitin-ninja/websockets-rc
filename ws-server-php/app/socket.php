@@ -33,7 +33,7 @@ class Socket implements MessageComponentInterface {
 
             // $client->send($msg);
             $client->send("OK");
-            printf($msg . "\n");
+            printf( sprintf('%.3f', microtime(true)) . ': ' . $msg . "\n");
         }
     }
 
