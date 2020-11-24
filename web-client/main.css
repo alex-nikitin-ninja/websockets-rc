@@ -30,7 +30,7 @@
 
 .wheel-value {
 	position: absolute;
-	bottom: 30px;
+	top: 30px;
 	height: 10px;
 	left: 0;
 	right: 220px;
