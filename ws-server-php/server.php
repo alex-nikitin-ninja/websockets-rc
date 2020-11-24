@@ -5,7 +5,7 @@ use Ratchet\Http\HttpServer;
 use Ratchet\WebSocket\WsServer;
 use MyApp\Socket;
 
-$cwd = dirname( __FILE__ );
+define("__CWD", dirname( __FILE__ ));
 
 require $cwd . '/vendor/autoload.php';
 

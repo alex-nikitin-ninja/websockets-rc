@@ -28,7 +28,7 @@ class Socket implements MessageComponentInterface {
             // }
             // $client->send( "Client $from->resourceId said $msg" );
 
-            $path = $cwd . '/tmp/state.json';
+            $path = __CWD . '/tmp/state.json';
             file_put_contents($path, $msg);
 
             // $client->send($msg);
