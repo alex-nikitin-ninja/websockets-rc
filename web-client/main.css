@@ -1,0 +1,86 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.camera-view {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 200px;
+	bottom: 0;
+	background-color: #ddf;
+	z-index: 1;
+}
+
+.joystickState-values {
+	position: absolute;
+	right: 0;
+	width: 200px;
+	top: 0;
+	bottom: 0;
+	z-index: 2;
+	background-color: #dff;
+	font-family: monospace;
+    white-space: pre;
+    padding-left: 10px;
+    overflow: hidden;
+}
+
+.wheel-value {
+	position: absolute;
+	bottom: 30px;
+	height: 10px;
+	left: 0;
+	right: 220px;
+	width: 800px;
+	margin: auto;
+	background-color: #bfb;
+	z-index: 2;
+	overflow: hidden;
+}
+
+
+.wheel-value .wheel-center,
+.wheel-value .wheel-position {
+	height: 100%;
+	position: absolute;
+	width: 20px;
+	background-color: #f55;
+	left: calc(50% - 10px);
+}
+
+.wheel-value .wheel-center {
+	width: 2px;
+	background-color: #555;
+	left: calc(50% - 1px);
+	z-index: 3;
+}
+
+.accel-value {
+	position: absolute;
+	right: 230px;
+	width: 10px;
+	height: 500px;
+	bottom: 30px;
+	background-color: #bbf;
+	z-index: 2;
+	overflow: hidden;
+}
+
+.accel-value .accel-center,
+.accel-value .accel-position {
+	position: absolute;
+	bottom: calc(50% - 10px);
+	height: 20px;
+	width: 100%;
+	background-color: #55f;
+}
+
+.accel-value .accel-center {
+	bottom: calc(50% - 1px);
+	height: 2px;
+	background-color: #555;
+	z-index: 3;
+}

@@ -2,12 +2,22 @@
 <html>
 <head>
     <title>WebSocket demo</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    
-    <div id="joystickState-values">joystickState-values</div>
+    <div id="joystickState-values" class="joystickState-values"></div>
+    <div class="camera-view"></div>
+    <div class="wheel-value">
+        <div class="wheel-position"></div>
+        <div class="wheel-center"></div>
+    </div>
+    <div class="accel-value">
+        <div class="accel-position"></div>
+        <div class="accel-center"></div>
+    </div>
 
     <script src="definitions.js"></script>
+    <script src="actions.js"></script>
     <script src="ws-client.js"></script>
     <script src="joystick-client.js"></script>
 </body>

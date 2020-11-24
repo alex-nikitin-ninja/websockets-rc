@@ -56,6 +56,7 @@ function updateStatus() {
             joystickState['controller_' + j].axes['_' + i] = val;
         }
     }
+    updateMainObject();
     rAF(updateStatus);
 }
 
