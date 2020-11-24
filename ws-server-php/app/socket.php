@@ -33,6 +33,7 @@ class Socket implements MessageComponentInterface {
 
             // $client->send($msg);
             $client->send("OK");
+            printf($msg);
         }
     }
 
