@@ -1,5 +1,5 @@
 let wsEnabled = false;
-// let wsEnabled = true;
+let wsEnabled = true;
 if (wsEnabled === true) {
 	var ws = new WebSocket("ws://192.168.0.116:8765/");
 
