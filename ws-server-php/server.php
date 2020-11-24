@@ -18,4 +18,6 @@ $server = IoServer::factory(
     8765
 );
 
+print_r("starting the server...");
+
 $server->run();
