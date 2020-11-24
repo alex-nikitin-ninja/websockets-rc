@@ -7,7 +7,7 @@ use MyApp\Socket;
 
 define("__CWD", dirname( __FILE__ ));
 
-require $cwd . '/vendor/autoload.php';
+require __CWD . '/vendor/autoload.php';
 
 $server = IoServer::factory(
     new HttpServer(
