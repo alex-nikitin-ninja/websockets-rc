@@ -31,7 +31,8 @@ class Socket implements MessageComponentInterface {
             $path = $cwd . '/tmp/state.json';
             file_put_contents($path, $msg);
 
-            $client->send($msg);
+            // $client->send($msg);
+            $client->send("OK");
         }
     }
 
