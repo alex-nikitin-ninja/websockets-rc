@@ -17,18 +17,21 @@ class Socket implements MessageComponentInterface {
         // Store the new connection in $this->clients
         $this->clients->attach($conn);
 
-        echo "New connection! ({$conn->resourceId})\n";
+        echo "New connection ({$conn->resourceId})\n";
     }
 
     public function onMessage(ConnectionInterface $from, $msg) {
-
         foreach ( $this->clients as $client ) {
 
-            if ( $from->resourceId == $client->resourceId ) {
-                continue;
-            }
+            // if ( $from->resourceId == $client->resourceId ) {
+            //     continue;
+            // }
+            // $client->send( "Client $from->resourceId said $msg" );
 
-            $client->send( "Client $from->resourceId said $msg" );
+            $path = $cwd . '/tmp/state.json';
+            file_put_contents($path, $msg);
+
+            $client->send($msg);
         }
     }
 

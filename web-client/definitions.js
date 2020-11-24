@@ -5,7 +5,7 @@ var configuration = {
 	accel: {
 		controller: 'controller_0',
 		entity: 'axes',
-		index: '_2',
+		index: '_1',
 		calibration: '-100'
 	},
 	wheel: {
@@ -15,6 +15,7 @@ var configuration = {
 		calibration: '100'
 	}
 }
+
 var movableObjectValues = {
 	accel: 0,
 	wheel: 0,
