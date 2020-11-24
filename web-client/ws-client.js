@@ -1,5 +1,5 @@
-// if (0) {
-if (1) {
+if (0) {
+// if (1) {
 	var ws = new WebSocket("ws://127.0.0.1:8765/");
 
 	function sendJStatus(){
