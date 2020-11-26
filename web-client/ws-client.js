@@ -55,9 +55,7 @@ if (0) {
         if (data.hasOwnProperty('f')) {
             let img = data.f;
             if (img !== false) {
-                // document.getElementById("camera-view").style.backgroundImage = "url('data:image/png;base64," + img + "')";
                 document.getElementById("image-one").setAttribute("src", "data:image/jpeg;base64," + img + "");
-                // document.getElementById("image-two").style.backgroundImage = "url('data:image/png;base64," + img + "')";
             }
         }
 
