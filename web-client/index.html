@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>WebSocket demo</title>
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
     <div id="joystickState-values" class="joystickState-values"></div>
-    <div id="camera-view" class="camera-view"></div>
+    <div id="camera-view" class="camera-view">
+        <img src="" id="image-one" class="image-one" alt="camear-stream">
+    </div>
     <div class="wheel-value">
         <div class="wheel-position"></div>
         <div class="wheel-center"></div>
@@ -16,10 +20,10 @@
         <div class="accel-position"></div>
         <div class="accel-center"></div>
     </div>
-
     <script src="definitions.js"></script>
     <script src="actions.js"></script>
     <script src="ws-client.js"></script>
     <script src="joystick-client.js"></script>
 </body>
+
 </html>

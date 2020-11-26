@@ -1,5 +1,3 @@
-console.log('joystick-client connected');
-
 var haveEvents = 'GamepadEvent' in window;
 var haveWebkitEvents = 'WebKitGamepadEvent' in window;
 var controllers = {};
