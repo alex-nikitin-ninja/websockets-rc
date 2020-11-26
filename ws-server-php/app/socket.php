@@ -38,8 +38,12 @@ class Socket implements MessageComponentInterface {
     }
 
     public function onClose(ConnectionInterface $conn) {
+        print_r("Connection dropped ({$conn->resourceId})\n");
+        $this->clients->detach($conn);
     }
 
     public function onError(ConnectionInterface $conn, \Exception $e) {
+        print_r("Error received ({$conn->resourceId})\n");
+        print_r($e->getMessage());
     }
 }
