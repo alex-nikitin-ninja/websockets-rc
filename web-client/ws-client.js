@@ -27,7 +27,7 @@ if (wsEnabled === true) {
 
 // camera streaming socket
 if (0) {
-    // var ws = new WebSocket("ws://192.168.0.116:8765/");
+    // var ws = new WebSocket("ws://192.168.0.116:8764/");
     var ws = new WebSocket("ws://127.0.0.1:8764/");
 
     function getImageCommand() {
