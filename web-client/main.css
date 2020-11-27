@@ -22,6 +22,44 @@
     object-fit: contain;
 }
 
+.camera-view .camera-mesh .camera-mesh-hor-one,
+.camera-view .camera-mesh .camera-mesh-hor-two {
+    left: 0;
+    top: 0;
+    height: calc(100%/3);
+    width: 100%;
+    position: absolute;
+    border-bottom: 1px solid #777;
+    opacity: 0.4;
+}
+
+.camera-view .camera-mesh .camera-mesh-hor-two {
+    border-top: 1px solid #777;
+    opacity: 0.4;
+    border-bottom: none;
+    top: auto;
+    bottom: 0;
+}
+
+.camera-view .camera-mesh .camera-mesh-ver-one,
+.camera-view .camera-mesh .camera-mesh-ver-two {
+    left: 0;
+    top: 0;
+    width: calc(100%/3);
+    height: 100%;
+    position: absolute;
+    border-right: 1px solid #777;
+    opacity: 0.4;
+}
+
+.camera-view .camera-mesh .camera-mesh-ver-two {
+    left: auto;
+    right: 0;
+    border-right: none;
+    border-left: 1px solid #777;
+    opacity: 0.4;
+}
+
 .joystickState-values {
     position: absolute;
     right: 0;
