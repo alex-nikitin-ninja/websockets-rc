@@ -2,7 +2,7 @@ let wsEnabled = false;
 // let wsEnabled = true;
 
 // RC commands sending socket
-if (wsEnabled === true) {
+if (0) {
     // var ws = new WebSocket("ws://192.168.0.116:8765/");
     var ws = new WebSocket("ws://127.0.0.1:8765/");
 
