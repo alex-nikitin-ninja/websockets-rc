@@ -1,16 +1,13 @@
-let wsEnabled = false;
-// let wsEnabled = true;
-
 // RC commands sending socket
 if (0) {
-    // var ws = new WebSocket("ws://192.168.0.116:8765/");
-    var ws = new WebSocket("ws://127.0.0.1:8765/");
+    let ws = new WebSocket("ws://192.168.0.218:8765/");
+    // let ws = new WebSocket("ws://127.0.0.1:8765/");
 
     function sendJStatus() {
         ws.send(JSON.stringify(movableObjectValues));
-        setTimeout(function() {
-            sendJStatus();
-        }, 50);
+        // setTimeout(function() {
+        //     sendJStatus();
+        // }, 50);
     };
 
     ws.onopen = function(event) {
@@ -20,15 +17,17 @@ if (0) {
     };
 
     ws.onmessage = function(event) {
-        // sendJStatus();
+        // setTimeout(function() {
+            sendJStatus();
+        // }, 50);
         console.log(event.data);
     };
 }
 
 // camera streaming socket
 if (0) {
-    // var ws = new WebSocket("ws://192.168.0.116:8764/");
-    var ws = new WebSocket("ws://127.0.0.1:8764/");
+    let ws = new WebSocket("ws://192.168.0.218:8764/");
+    // let ws = new WebSocket("ws://127.0.0.1:8764/");
 
     function getImageCommand() {
         ws.send(JSON.stringify({ action: 'get-image' }));
